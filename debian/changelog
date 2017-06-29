@@ -1,0 +1,7 @@
+containernetworking-plugins (0.5.2-1ppa1) zesty; urgency=medium
+
+  * initial package
+  * source tarball uses upstream commit dcf7368 + debian patches
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Wed, 28 Jun 2017 16:37:22 -0400
+

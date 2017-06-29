@@ -1,0 +1,19 @@
+Source: containernetworking-plugins
+Section: devel
+Priority: extra
+Maintainer: Lokesh Mandvekar <lsm5@fedoraproject.org>
+Build-Depends: debhelper (>= 9), rsync, golang, dh-golang
+Standards-Version: 3.9.8
+Homepage: https://github.com/opencontainers/runc
+Vcs-Git: https://anonscm.debian.org/git/pkg-go/packages/runc.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-go/packages/runc.git
+
+Package: containernetworking-plugins
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Breaks: docker.io (<< 1.12)
+Built-Using: ${misc:Built-Using}
+Description: Open Container Project - runtime
+ "runc" is a command line client for running applications packaged according
+ to the Open Container Format (OCF) and is a compliant implementation of
+ the Open Container Project specification.
